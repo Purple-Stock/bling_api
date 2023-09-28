@@ -20,11 +20,9 @@ module BlingApi
       params = { apikey: @api_key }.merge(options)
       response = self.class.get(url, query: params)
 
-      if response.success?
-        JSON.parse(response.body)
-      else
-        raise "Error: #{response.code} - #{response.message}"
-      end
+      raise "Error: #{response.code} - #{response.message}" unless response.success?
+
+      JSON.parse(response.body)
     end
   end
 end
