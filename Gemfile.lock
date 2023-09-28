@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     bling_api (0.1.0)
-      httparty (~> 0.21.0)
+      httparty
 
 GEM
   remote: https://rubygems.org/
