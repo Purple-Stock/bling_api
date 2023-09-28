@@ -1,5 +1,8 @@
 AllCops:
   TargetRubyVersion: 3.1.2
+  Exclude:
+    - 'bin/{console, setup}'
+    - 'Rakefile'
 
 Style/StringLiterals:
   Enabled: true
