@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "bling_api/version"
-require "net/http"
-require "json"
-require "uri"
+require_relative 'bling_api/version'
+require 'net/http'
+require 'json'
+require 'uri'
+require 'httparty'
 
 module BlingApi
   class Client
     include HTTParty
-    BASE_URL = "https://bling.com.br/Api/v2"
+    BASE_URL = 'https://bling.com.br/Api/v2'
 
     def initialize(api_key)
       @api_key = api_key
