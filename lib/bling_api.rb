@@ -7,6 +7,8 @@ require 'uri'
 require 'httparty'
 
 module BlingApi
+  # Client is the base for all its children
+  # It will connect to api v3
   class Client
     include HTTParty
     BASE_URL = 'https://bling.com.br/Api/v2'
