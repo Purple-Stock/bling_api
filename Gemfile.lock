@@ -8,13 +8,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    base64 (0.1.1)
     diff-lcs (1.5.0)
     httparty (0.17.3)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    json (2.6.3)
-    language_server-protocol (3.17.0.3)
     mime-types (3.5.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0808)
@@ -41,18 +38,15 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (1.56.4)
-      base64 (~> 0.1.1)
-      json (~> 2.3)
-      language_server-protocol (>= 3.17.0)
+    rubocop (1.21.0)
       parallel (~> 1.10)
-      parser (>= 3.2.2.3)
+      parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
-      rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.28.1, < 2.0)
+      rexml
+      rubocop-ast (>= 1.9.1, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 2.4.0, < 3.0)
+      unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
@@ -65,7 +59,7 @@ DEPENDENCIES
   bling_api!
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (= 1.56.4)
+  rubocop (= 1.21)
 
 BUNDLED WITH
    2.3.26
