@@ -1,4 +1,5 @@
 AllCops:
+  NewCops: disable
   TargetRubyVersion: 3.1.2
   Exclude:
     - 'bin/{console, setup}'
