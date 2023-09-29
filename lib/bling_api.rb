@@ -4,6 +4,7 @@ require_relative "bling_api/version"
 require "net/http"
 require "json"
 require "uri"
+require "httparty"
 
 module BlingApi
   class Client
